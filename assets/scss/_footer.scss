@@ -1,0 +1,69 @@
+/* ======= footer styling ========= */
+.footer {
+    background-color: $break-white;
+}
+
+.footer-wrapper {
+    //border-top: 1px solid transparentize($main-color, .65);
+
+    .footer-blocks {
+        justify-content: space-between;
+
+        .footer-block {
+            width: 45%;
+            margin-left: 1rem;
+        }
+
+        .f-links {
+            li {
+                margin-bottom: 1rem;
+
+                a {
+                    padding: .5rem 0;
+                    color: $sec-color;
+                    border-bottom: 1px solid transparent;
+                    transition: all .3s ease;
+
+                    &:hover, &:active {
+                        color: $main-color;
+                        border-bottom-color: $main-color;
+                    }
+                }
+            }
+        }
+
+        .s-links {
+            display: flex;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+            }
+
+            li {
+                margin-left: 1rem;
+
+                a {
+                    padding: 1rem;
+                    color: $sec-color;
+                    transition: all .3s ease;
+
+                    &:hover, &:active {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+        color: $main-color;
+
+    }
+}
+/* ======== end footer styling ========= */

@@ -453,6 +453,59 @@ li, ol, ul, dl {
 }
 
 /* ========= end articles styling ======== */
+/* ======= footer styling ========= */
+.footer {
+  background-color: #eaf6ff;
+}
+
+.footer-wrapper .footer-blocks {
+  justify-content: space-between;
+}
+.footer-wrapper .footer-blocks .footer-block {
+  width: 45%;
+  margin-left: 1rem;
+}
+.footer-wrapper .footer-blocks .f-links li {
+  margin-bottom: 1rem;
+}
+.footer-wrapper .footer-blocks .f-links li a {
+  padding: .5rem 0;
+  color: #7a7b7d;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease;
+}
+.footer-wrapper .footer-blocks .f-links li a:hover, .footer-wrapper .footer-blocks .f-links li a:active {
+  color: #ffa400;
+  border-bottom-color: #ffa400;
+}
+.footer-wrapper .footer-blocks .s-links {
+  display: flex;
+}
+.footer-wrapper .footer-blocks .s-links ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.footer-wrapper .footer-blocks .s-links li {
+  margin-left: 1rem;
+}
+.footer-wrapper .footer-blocks .s-links li a {
+  padding: 1rem;
+  color: #7a7b7d;
+  transition: all .3s ease;
+}
+.footer-wrapper .footer-blocks .s-links li a:hover, .footer-wrapper .footer-blocks .s-links li a:active {
+  color: #ffa400;
+}
+.footer-wrapper .copyright {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #ffa400;
+}
+
+/* ======== end footer styling ========= */
 .btn {
   display: inline-block;
   padding: .5rem 1rem;

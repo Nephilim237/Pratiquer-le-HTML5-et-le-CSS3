@@ -1,0 +1,40 @@
+// Misc buttons styling
+.btn {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: #ffa400;
+	color: #fff;
+	font-size: 1.15rem;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	outline: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	transition: all .3s ease;
+
+	&:hover, &:focus {
+		outline: none;
+		background-color: darken($main-color, 7%);
+		box-shadow: 2px 4px 8px rgba($black, .5);
+	}
+
+	&.btn-mini {
+		padding: .25rem .5rem;
+		font-size: 1rem;
+	}
+
+	&.btn-big {
+		padding: .75rem 1.5rem;
+	}
+
+	&.btn-outline:hover {
+		background-color: transparent;
+		color: $main-color;
+		border-color: $main-color;
+		box-shadow: none;
+	}
+}

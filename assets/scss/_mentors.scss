@@ -1,0 +1,47 @@
+/* ======= mentors styling ===== */
+.mentors {
+  background-color: rgba($break-white, 1);
+}
+
+.mentors-wrapper {
+  header {
+  }
+
+  .mentors-container {
+    justify-content: space-between;
+
+    .box {
+      max-width: 23%;
+      width: 20%;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      box-shadow: 1px 1px 3px rgba($main-color, .25), -1px -1px 3px rgba($main-color, .25);
+      border-radius: .25rem;
+    }
+
+    .mentor-img {
+      padding: 1rem;
+      border-radius: 50%;
+    }
+
+    img {
+      max-width: 240px;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    @media (max-width: $medium) {
+      flex-wrap: wrap;
+
+      .box {
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+        max-width: 48%;
+        width: 45%;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+/* ======= end mentors styling ====== */

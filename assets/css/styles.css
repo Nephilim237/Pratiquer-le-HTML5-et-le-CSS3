@@ -360,6 +360,46 @@ li, ol, ul, dl {
 }
 
 /* ========= end card section styling ======== */
+/* ======= mentors styling ===== */
+.mentors {
+  background-color: #eaf6ff;
+}
+
+.mentors-wrapper .mentors-container {
+  justify-content: space-between;
+}
+.mentors-wrapper .mentors-container .box {
+  max-width: 23%;
+  width: 20%;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  box-shadow: 1px 1px 3px rgba(255, 164, 0, 0.25), -1px -1px 3px rgba(255, 164, 0, 0.25);
+  border-radius: .25rem;
+}
+.mentors-wrapper .mentors-container .mentor-img {
+  padding: 1rem;
+  border-radius: 50%;
+}
+.mentors-wrapper .mentors-container img {
+  max-width: 240px;
+  width: 100%;
+  border-radius: 50%;
+}
+@media (max-width: 1024px) {
+  .mentors-wrapper .mentors-container {
+    flex-wrap: wrap;
+  }
+  .mentors-wrapper .mentors-container .box {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    max-width: 48%;
+    width: 45%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+/* ======= end mentors styling ====== */
 /* ========= articles styling ======== */
 .articles-container {
   justify-content: space-between;

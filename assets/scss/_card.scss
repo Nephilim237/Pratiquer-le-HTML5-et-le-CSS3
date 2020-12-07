@@ -1,0 +1,58 @@
+/* ======== card section styling ====== */
+.card {
+}
+
+.card-wrapper {
+	display: flex;
+
+	article {
+		margin-right: 1rem;
+	    padding: 0 1rem 0 1.5rem;
+	    border: 1px solid transparent;
+	    border-right-color: transparentize($sec-color, .45);
+
+	    &:last-child {
+	    	border-right-color: transparent;
+	    }
+
+	    header {
+	    	margin-bottom: 2rem;
+	    }
+
+		h3 {
+			max-width: 75%;
+			font-family: $piazzo;
+			font-size: 1.6rem;
+			font-weight: 500;
+			color: $main-color;
+			text-shadow: 1px 1px 2px;
+		}
+
+		p {
+			color: $sec-color;
+		}
+	}
+
+	@media (max-width: $medium) {
+		& {
+			flex-flow: column;
+
+			article {
+				margin-bottom: 1rem;
+				padding-bottom: 2rem;
+				border-right-color: transparent;
+				border-bottom-color: transparentize($sec-color, .85);
+
+				&:last-child {
+					border-bottom-color: transparent;
+				}
+
+				h3 {
+					max-width: 100%;
+					width: 90%;
+				}
+			}
+		}
+	}
+}
+/* ========= end card section styling ======== */

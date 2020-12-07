@@ -313,6 +313,53 @@ li, ol, ul, dl {
   }
 }
 
+/* ======== card section styling ====== */
+.card-wrapper {
+  display: flex;
+}
+.card-wrapper article {
+  margin-right: 1rem;
+  padding: 0 1rem 0 1.5rem;
+  border: 1px solid transparent;
+  border-right-color: rgba(122, 123, 125, 0.55);
+}
+.card-wrapper article:last-child {
+  border-right-color: transparent;
+}
+.card-wrapper article header {
+  margin-bottom: 2rem;
+}
+.card-wrapper article h3 {
+  max-width: 75%;
+  font-family: "Piazzolla", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffa400;
+  text-shadow: 1px 1px 2px;
+}
+.card-wrapper article p {
+  color: #7a7b7d;
+}
+@media (max-width: 1024px) {
+  .card-wrapper {
+    flex-flow: column;
+  }
+  .card-wrapper article {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-right-color: transparent;
+    border-bottom-color: rgba(122, 123, 125, 0.15);
+  }
+  .card-wrapper article:last-child {
+    border-bottom-color: transparent;
+  }
+  .card-wrapper article h3 {
+    max-width: 100%;
+    width: 90%;
+  }
+}
+
+/* ========= end card section styling ======== */
 /* ========= articles styling ======== */
 .articles-container {
   justify-content: space-between;

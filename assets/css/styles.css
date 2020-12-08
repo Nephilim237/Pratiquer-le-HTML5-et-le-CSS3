@@ -114,29 +114,12 @@ li, ol, ul, dl {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 600px) {
+@media (max-width: 1024px) {
   .container {
-    max-width: 560px;
-  }
-}
-@media (min-width: 1000px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1150px;
+    max-width: 720px;
   }
 }
 
-.section-header {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4rem;
-  text-align: center;
-}
 .section-header p {
   color: #7a7b7d;
 }
@@ -463,6 +446,12 @@ li, ol, ul, dl {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .category-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
 .category-post {
   position: relative;
@@ -519,13 +508,34 @@ li, ol, ul, dl {
   background-color: rgba(255, 164, 0, 0.65);
 }
 
+@media (max-width: 1024px) {
+  .blog-area {
+    padding-top: 0;
+  }
+}
+
 .area-wrapper {
   display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+  .area-wrapper {
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+  }
 }
 
 .blog-left-sidebar {
   width: 75%;
+  flex: 0 0 75%;
   padding: 0 1rem;
+}
+@media (max-width: 1024px) {
+  .blog-left-sidebar {
+    width: 100%;
+    flex: 0 0 100%;
+    padding-bottom: 2rem;
+  }
 }
 .blog-left-sidebar .blog-item {
   display: flex;
@@ -534,6 +544,11 @@ li, ol, ul, dl {
 .blog-left-sidebar .blog-info {
   padding: 3rem 2rem 0;
   text-align: right;
+}
+@media (max-width: 1024px) {
+  .blog-left-sidebar .blog-info {
+    padding: 0 1rem 0 0;
+  }
 }
 .blog-left-sidebar .blog-info .post-tag {
   padding-bottom: 1rem;
@@ -553,9 +568,6 @@ li, ol, ul, dl {
   line-height: 1em;
   vertical-align: middle;
   color: #7a7b7d;
-}
-.blog-left-sidebar .blog-post img {
-  max-width: 80%;
 }
 .blog-left-sidebar .blog-post .blog-details {
   padding-top: 1rem;
@@ -599,15 +611,22 @@ li, ol, ul, dl {
 .blog-left-sidebar .blog-pagination .pagination .page-link:disabled, .blog-left-sidebar .blog-pagination .pagination .page-link.disabled {
   cursor: not-allowed;
   background-color: transparent;
-  color: #7a7b7d;
+  color: rgba(122, 123, 125, 0.55);
 }
 
 .blog-right-sidebar {
   width: 25%;
+  flex: 0 0 25%;
   height: fit-content;
   padding: 1.5rem;
   border: 1px solid #d4d5d5;
   background-color: #eaf6ff;
+}
+@media (max-width: 1024px) {
+  .blog-right-sidebar {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 .blog-right-sidebar .tag-cloud-widget ul {
   display: flex;

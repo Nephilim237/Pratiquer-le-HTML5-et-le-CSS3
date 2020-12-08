@@ -111,33 +111,14 @@ li, ol, ul, dl {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-
-	@media (min-width: 600px){
-	 	& {
-	 		max-width: 560px;
-	 	}
-	}
-
-	@media (min-width: 1000px){
+	@media (max-width: $medium){
 		& {
-			max-width: 960px;
-		}
-	}
-
-	@media (min-width: 1200px){
-		& {
-			max-width: 1150px;
+			max-width: 720px;
 		}
 	}
 }
 
 .section-header {
-	max-width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 4rem;
-	text-align: center;
-
 	p {
 		color: $sec-color;
 	}

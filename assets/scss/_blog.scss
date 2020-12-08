@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    @media(max-width: $medium) {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .category-post {
@@ -72,16 +76,29 @@
 }
 
 .blog-area {
-
+    @media(max-width: $medium) {
+        padding-top: 0;
+    }
 }
 
 .area-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    @media(max-width: $medium) {
+        padding-top: 1rem;
+        border-top: 1px solid #ccc;
+    }
 }
 
 .blog-left-sidebar {
     width: 75%;
+    flex: 0 0 75%;
     padding: 0 1rem;
+    @media(max-width: $medium) {
+        width: 100%;
+        flex: 0 0 100%;
+        padding-bottom: 2rem;
+    }
 
     .blog-item {
         display: flex;
@@ -91,6 +108,9 @@
     .blog-info {
         padding: 3rem 2rem 0;
         text-align: right;
+        @media(max-width: $medium) {
+            padding: 0 1rem 0 0;
+        }
 
         .post-tag {
             padding-bottom: 1rem;
@@ -117,10 +137,6 @@
     }
 
     .blog-post {
-
-        img {
-            max-width: 80%;
-        }
 
         .blog-details {
             padding-top: 1rem;
@@ -175,7 +191,7 @@
                 &:disabled, &.disabled {
                     cursor: not-allowed;
                     background-color: transparent;
-                    color: $sec-color;
+                    color: transparentize($sec-color, .45);
                 }
             }
         }
@@ -184,11 +200,15 @@
 
 .blog-right-sidebar {
     width: 25%;
+    flex: 0 0 25%;
     height: fit-content;
     padding: 1.5rem;
     border: 1px solid lighten($sec-color, 35%);
     background-color: $break-white;
-    //border-radius: .25rem;
+    @media(max-width: $medium) {
+        width: 100%;
+        flex: 0 0 100%;
+    }
 
     .tag-cloud-widget {
         ul {

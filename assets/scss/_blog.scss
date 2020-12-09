@@ -4,6 +4,9 @@
     }
 
     &.single-post-area {
+        h4 {
+            font-size: 1rem;
+        }
         .post-elts {
             width: 70%;
             flex: 0 0 70%;
@@ -75,6 +78,139 @@
                 color: $sec-color
             }
         }
+    }
+
+    .navigation-area {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+
+        .nav-left, .nav-right {
+            display: flex;
+            flex: 0 0 50%;
+            width: 50%;
+            align-items: center;
+
+            .thumb {
+                width: 60px;
+                background-color: $black;
+
+                img {
+                    transition: all .3s ease-in;
+                }
+            }
+
+            &:hover {
+                .thumb img {
+                    opacity: .5;
+                }
+
+                .details {
+                    a {
+                        color: $main-color;
+                    }
+                }
+
+                .arrow {
+                    i {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .nav-right {
+            flex-flow: row-reverse;
+            text-align: right;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        width: 60px;
+        text-align: center;
+
+        i {
+            color: $main-color;
+            opacity: 0;
+            transition: .3s ease-in;
+        }
+    }
+
+    .details {
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $font-color;
+            transition: .3s ease-in;
+        }
+    }
+
+    .comment-area {
+        border: 1px solid #eee;
+        padding: 50px 30px;
+        margin-top: 50px;
+
+        h4 {
+            margin-bottom: 50px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .thumb {
+            width: 15%;
+            flex: 0 0 15%;
+        }
+
+        .desc {
+            width: 85%;
+            flex: 0 0 85%;
+
+            h5 {
+                margin-bottom: 0;
+            }
+
+            h5 a {
+                color: $font-color;
+                font-size: 16px;
+            }
+        }
+
+        .single-comment {
+            align-items: center;
+        }
+
+        .comment-options {
+            .row {
+                justify-content: space-between;
+                margin-bottom: 0;
+            }
+
+            small:first-child {
+                font-style: italic;
+                font-size: 11px;
+                font-weight: bold;
+            }
+
+            small:last-child {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background-color: #eee;
+                transition: .25s ease-in;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: $break-white;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
     }
 }
 

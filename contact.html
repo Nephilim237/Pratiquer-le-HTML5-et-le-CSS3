@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Coding City">
+    <title>Pratiquer HTML5 & CSS3 | Blog</title>
+    <link rel="icon" href="assets/imgs/Coding%20city.ico">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Font awesome link (Lien pour les jolies icones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
+<!-- header section -->
+<header class="header light-header" id="header">
+    <div class="container">
+        <div class="header-container">
+            <a href="#" class="logo"><img src="assets/imgs/MCC.png" alt="Logo"></a>
+            <nav class="navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil <i class="fas fa-home"></i></a></li>
+                    <li class="nav-item submenu">
+                        <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Blog <i class="fas fa-comment"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="single.html" class="nav-link">Single Blog <i class="far fa-newspaper"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact <i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </nav>
+            <a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+</header>
+<!-- end header section -->
 
+<!-- banner section -->
+<section class="banner contact-banner">
+    <div class="container">
+        <div class="banner-wrapper">
+            <h1 class="b-title">Nous contacter</h1>
+            <div class="page-link">
+                <a href="index.html">Accueil<i class="fas fa-caret-right"></i></a>
+                <a href="contact.html">nous contacter</i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end banner section -->
+
+<!-- footer section -->
+<footer class="footer py-70" id="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-blocks flex">
+                <div class="footer-block f-links">
+                    <ul>
+                        <li><a href="#">A propos de nous</a></li>
+                        <li><a href="#">Nous écrire</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block s-links">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright" id="copyright">
+                &copy; | Coding City 2020 all rights reserved
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer section -->
+<script type="text/javascript" src="assets/script.js"></script>
 </body>
 </html>

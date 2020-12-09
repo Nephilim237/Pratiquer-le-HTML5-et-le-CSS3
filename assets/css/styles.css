@@ -54,7 +54,7 @@ li, ol, ul, dl {
   vertical-align: middle;
 }
 
-.p-70 {
+.py-70 {
   padding: 70px 0;
 }
 
@@ -68,6 +68,29 @@ li, ol, ul, dl {
 
 .pb-120 {
   padding-bottom: 120px;
+}
+
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .b-title {
@@ -106,6 +129,13 @@ li, ol, ul, dl {
   font-weight: 600;
   font-size: 1.2rem;
   color: #ffa400;
+}
+
+.post-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #7a7b7d;
 }
 
 .container {
@@ -574,6 +604,74 @@ li, ol, ul, dl {
 }
 
 /* ========= end articles styling ======== */
+@media (max-width: 1024px) {
+  .blog-area {
+    padding-top: 0;
+  }
+}
+.blog-area.single-post-area .post-elts {
+  width: 70%;
+  flex: 0 0 70%;
+  font-size: 15px;
+}
+.blog-area.single-post-area .post-img {
+  width: 100%;
+  flex: 0 0 100%;
+}
+.blog-area.single-post-area .blog-details {
+  width: 75%;
+  flex: 0 0 75%;
+}
+.blog-area.single-post-area .notice .quote {
+  background-color: #eaf6ff;
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.23);
+}
+.blog-area.single-post-area .notice-img {
+  width: 50%;
+  flex: 0 0 50%;
+}
+.blog-area.single-post-area .notice-text {
+  margin-top: 25px;
+}
+.blog-area .blog-info {
+  width: 25%;
+  flex: 0 0 25%;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .blog-area .blog-info {
+    padding: 0 1rem 0 0;
+  }
+}
+.blog-area .blog-info .post-tag {
+  padding-bottom: 1rem;
+}
+.blog-area .blog-info .post-tag a {
+  font: 300 0.9em/1.2 "Ubuntu", sans-serif;
+  color: #495454;
+  transition: .25s ease-in;
+}
+.blog-area .blog-info .post-tag a:active, .blog-area .blog-info .post-tag a.active, .blog-area .blog-info .post-tag a:hover, .blog-area .blog-info .post-tag a.hover {
+  color: #ffa400;
+}
+.blog-area .blog-info .blog-meta {
+  padding-left: 0;
+}
+.blog-area .blog-info .blog-meta a {
+  display: inline-block;
+  padding-bottom: 1rem;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #7a7b7d;
+}
+
 .blog-intro {
   max-width: 70%;
   margin: 0 auto;
@@ -643,12 +741,6 @@ li, ol, ul, dl {
 }
 
 @media (max-width: 1024px) {
-  .blog-area {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 1024px) {
   .area-wrapper {
     padding-top: 1rem;
     border-top: 1px solid #ccc;
@@ -670,34 +762,6 @@ li, ol, ul, dl {
 .blog-left-sidebar .blog-item {
   display: flex;
   margin-bottom: 4rem;
-}
-.blog-left-sidebar .blog-info {
-  padding: 0 2rem;
-  text-align: right;
-}
-@media (max-width: 1024px) {
-  .blog-left-sidebar .blog-info {
-    padding: 0 1rem 0 0;
-  }
-}
-.blog-left-sidebar .blog-info .post-tag {
-  padding-bottom: 1rem;
-}
-.blog-left-sidebar .blog-info .post-tag a {
-  font: 300 0.9em/1.2 "Ubuntu", sans-serif;
-  color: #495454;
-}
-.blog-left-sidebar .blog-info .blog-meta {
-  padding-left: 0;
-}
-.blog-left-sidebar .blog-info .blog-meta a {
-  display: inline-block;
-  padding-bottom: 1rem;
-  font-size: .9em;
-  font-weight: 300;
-  line-height: 1em;
-  vertical-align: middle;
-  color: #7a7b7d;
 }
 @media (max-width: 1024px) {
   .blog-left-sidebar .blog-post {

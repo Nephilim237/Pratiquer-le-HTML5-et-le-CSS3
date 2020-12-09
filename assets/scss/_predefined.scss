@@ -53,7 +53,7 @@ li, ol, ul, dl {
 	vertical-align: middle;
 }
 
-.p-70 {
+.py-70 {
 	padding: 70px 0;
 }
 
@@ -66,6 +66,29 @@ li, ol, ul, dl {
 }
 .pb-120 {
 	padding-bottom: 120px;
+}
+
+.px-15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.m-1 {
+	margin: 1rem;
+}
+
+.mx-1 {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.my-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
 }
 
 .b-title {
@@ -104,6 +127,12 @@ li, ol, ul, dl {
 	font-weight: 600;
 	font-size: 1.2rem;
 	color: $main-color;
+}
+.post-title {
+	font-family: $ubuntu;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: $sec-color;
 }
 
 .container {

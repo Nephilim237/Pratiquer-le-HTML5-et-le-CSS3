@@ -1,3 +1,83 @@
+.blog-area {
+    @media(max-width: $medium) {
+        padding-top: 0;
+    }
+
+    &.single-post-area {
+        .post-elts {
+            width: 70%;
+            flex: 0 0 70%;
+            font-size: 15px;
+        }
+
+        .post-img {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .blog-details {
+            width: 75%;
+            flex: 0 0 75%;
+        }
+
+        .notice .quote {
+            background-color: $break-white;
+            margin: 2rem 0;
+            padding: 2rem 3rem;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, .23);
+        }
+
+        .notice-img {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+
+        .notice-text {
+            margin-top: 25px;
+        }
+    }
+
+    .blog-info {
+        width: 25%;
+        flex: 0 0 25%;
+        text-align: right;
+        @media(max-width: $medium) {
+            padding: 0 1rem 0 0;
+        }
+
+        .post-tag {
+            padding-bottom: 1rem;
+
+            a {
+                font: 300 .9em/1.2 $ubuntu;
+                color: $font-color;
+                transition: .25s ease-in;
+
+                &:active, &.active, &:hover, &.hover {
+                    color: $main-color;
+                }
+            }
+        }
+
+        .blog-meta {
+            padding-left: 0;
+
+            a {
+                display: inline-block;
+                padding-bottom: 1rem;
+                font-size: .9em;
+                font-weight: 300;
+                line-height: 1em;
+                vertical-align: middle;
+                color: $sec-color
+            }
+        }
+    }
+}
+
 .blog-intro {
     max-width: 70%;
     margin: 0 auto;
@@ -75,9 +155,6 @@
 }
 
 .blog-area {
-    @media(max-width: $medium) {
-        padding-top: 0;
-    }
 }
 
 .area-wrapper {
@@ -100,37 +177,6 @@
     .blog-item {
         display: flex;
         margin-bottom: 4rem;
-    }
-
-    .blog-info {
-        padding: 0 2rem;
-        text-align: right;
-        @media(max-width: $medium) {
-            padding: 0 1rem 0 0;
-        }
-
-        .post-tag {
-            padding-bottom: 1rem;
-
-            a {
-                font: 300 .9em/1.2 $ubuntu;
-                color: $font-color;
-            }
-        }
-
-        .blog-meta {
-            padding-left: 0;
-
-            a {
-                display: inline-block;
-                padding-bottom: 1rem;
-                font-size: .9em;
-                font-weight: 300;
-                line-height: 1em;
-                vertical-align: middle;
-                color: $sec-color
-            }
-        }
     }
 
     .blog-post {

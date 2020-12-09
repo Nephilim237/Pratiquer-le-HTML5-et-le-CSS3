@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Coding City">
 	<title>Pratiquer HTML5 & CSS3 | Accueil</title>
+	<link rel="icon" href="assets/imgs/Coding%20city.ico">
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!-- Font awesome link (Lien pour les jolies icones) -->
@@ -19,7 +20,17 @@
 				<nav class="navigation">
 					<ul class="nav-links" id="nav-links">
 						<li class="nav-item"><a href="index.html" class="nav-link active">Accueil <i class="fas fa-home"></i></a></li>
-						<li class="nav-item"><a href="blog.html" class="nav-link">Blog <i class="fas fa-comments"></i></a></li>
+                        <li class="nav-item submenu">
+                            <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link">Blog <i class="fas fa-comment"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="single.html" class="nav-link">Single Blog <i class="far fa-newspaper"></i></a>
+                                </li>
+                            </ul>
+                        </li>
 						<li class="nav-item"><a href="#" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
 					</ul>
 				</nav>

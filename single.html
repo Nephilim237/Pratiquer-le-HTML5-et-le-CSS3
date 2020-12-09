@@ -21,17 +21,17 @@
                 <ul class="nav-links" id="nav-links">
                     <li class="nav-item"><a href="index.html" class="nav-link">Accueil <i class="fas fa-home"></i></a></li>
                     <li class="nav-item submenu">
-                        <a href="#" class="nav-link active">Blog <i class="fas fa-comments"></i></a>
+                        <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="blog.html" class="nav-link active">Blog <i class="fas fa-comment"></i></a>
+                                <a href="blog.html" class="nav-link">Blog <i class="fas fa-comment"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a href="single.html" class="nav-link">Single Blog <i class="far fa-newspaper"></i></a>
+                                <a href="single.html" class="nav-link active">Single Blog <i class="far fa-newspaper"></i></a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
                 </ul>
             </nav>
             <a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a>
@@ -40,62 +40,30 @@
 </header>
 <!-- end header section -->
 
-<section class="blog-intro pt-120">
+<!-- banner section -->
+<section class="banner single-banner">
     <div class="container">
-        <div class="intro weight300 t-center">
-            <h1 class="main-title t-center">Bienvenue sur le blog de la connaissance</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic at omnis, placeat vitae doloremque sunt ipsa facere obcaecati voluptates doloribus tempore incidunt dolore tenetur ducimus, maxime unde recusandae nostrum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cumque distinctio eaque excepturi, exercitationem explicabo fugit incidunt ipsa nihil officiis perferendis sunt temporibus vero. Doloremque harum maiores quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eius facilis impedit perspiciatis quidem sapiente similique? Asperiores aut cupiditate doloremque explicabo incidunt, necessitatibus quis reiciendis saepe sequi similique tempora voluptatibus.</p>
+        <div class="banner-wrapper">
+            <h1 class="b-title">Java et le développement mobile</h1>
+            <div class="page-link">
+                <a href="#">Accueil<i class="fas fa-caret-right"></i></a>
+                <a href="#">Blog<i class="fas fa-caret-right"></i></a>
+                <a href="#">Article blog<i class="fas fa-caret-right"></i></a>
+            </div>
         </div>
     </div>
 </section>
+<!-- end banner section -->
 
-<!--======Blog Categorie Area ======-->
-<section class="blog-category p-70">
-    <div class="container">
-        <div class="category-wrapper row">
-            <div class="category-post">
-                <img src="assets/imgs/blog/cat-post/cat-3.png" alt="post" class="img">
-                <div class="category-details">
-                    <div class="category-text">
-                        <a href="#"><h5>Intelligence artificielle</h5></a>
-                        <div class="border_line"></div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="category-post">
-                <img src="assets/imgs/blog/cat-post/cat-2.jpg" alt="post" class="img">
-                <div class="category-details">
-                    <div class="category-text">
-                        <a href="blog-details.php"><h5>Structure de donnees</h5></a>
-                        <div class="border_line"></div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="category-post">
-                <img src="assets/imgs/blog/cat-post/cat-1.jpeg" alt="post" class="img">
-                <div class="category-details">
-                    <div class="category-text">
-                        <a href="blog-details.php"><h5>Developpement mobile</h5></a>
-                        <div class="border_line"></div>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!--================Blog Categorie Area =================-->
-
-<!--================Blog Area =================-->
-<section class="blog-area p-70">
+<!-- Blog area -->
+<section class="blog-area single-post-area p-70">
     <div class="container">
         <div class="area-wrapper row">
-            <div class="blog-left-sidebar">
-                <article class="blog-item">
+            <div class="post-elts">
+                <div class="single-post row">
+                    <div class="post-img">
+                        <img src="assets/imgs/blog/main-blog/mainBlog-2.jpg" alt="Java et le developpement mobile" class="img">
+                    </div>
                     <div class="blog-info text-right">
                         <div class="post-tag">
                             <a href="#">Développement,</a>
@@ -110,62 +78,23 @@
                             <li class="comments"><a href="#">197 commentaires<i class="fas fa-comment"></i></a></li>
                         </ul>
                     </div>
-                    <div class="blog-post">
-                        <img src="assets/imgs/blog/main-blog/mainBlog-1.jpeg" alt="">
-                        <div class="blog-details">
-                            <a href="#"><h2>L'impact du hacking chez les non avises</h2></a>
-                            <p class="weight300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore necessitatibus, repellendus sequi ut voluptates!</p>
-                            <a href="#" class="btn">Lire l'article</a>
+                    <div class="blog-details">
+                        <a href="#"><h2>L'impact du hacking chez les non avises</h2></a>
+                        <p class="weight300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi inventore necessitatibus, repellendus sequi ut voluptates!</p>
+                        <a href="#" class="btn">Lire l'article</a>
+                    </div>
+                    <div class="notice">
+                        <div class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, facere nam quibusdam quo rem repellat sequi. Amet cupiditate dolor in magni sapiente sequi, soluta vel. Deserunt libero saepe sapiente. Expedita?</div>
+                        <div class="notice-details row">
+                            <div class="notice-img"><img src="assets/imgs/articles/post-1.jpg" alt="" class="img"></div>
+                            <div class="notice-img"><img src="assets/imgs/articles/post-4.jpg" alt="" class="img"></div>
+                            <div class="notice-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid exercitationem ipsam molestias natus provident tempore?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad commodi, delectus esse eum eveniet excepturi harum itaque, laudantium magni maxime nam nemo neque quae quod quos sapiente temporibus voluptatem. Ipsa, sequi?</p>
+                            </div>
                         </div>
                     </div>
-                </article>
-                <article class="blog-item">
-                    <div class="blog-info text-right">
-                        <div class="post-tag">
-                            <a href="#">Développement,</a>
-                            <a class="active" href="#">Technologie,</a>
-                            <a href="#">Programmation,</a>
-                            <a href="#">Java</a>
-                        </div>
-                        <ul class="blog-meta">
-                            <li class="author"><a href="#">S. Le Nephilim<i class="fas fa-user"></i></a></li>
-                            <li class="date"><a href="#">13 Aout 2020<i class="fas fa-calendar-alt"></i></a></li>
-                            <li class="consulted"><a href="#">Consulte 1.2M de fois<i class="fas fa-eye"></i></a></li>
-                            <li class="comments"><a href="#">197 commentaires<i class="fas fa-comment"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="blog-post">
-                        <img src="assets/imgs/blog/main-blog/mainBlog-2.jpg" alt="">
-                        <div class="blog-details">
-                            <a href=""><h2>Java et le développement mobile</h2></a>
-                            <p class="weight300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ipsam?...</p>
-                            <a href="" class="btn">Lire l'article <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-                <nav class="blog-pagination">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a href="#" class="page-link" aria-label="Previous">
-                                <span aria-hidden="true">
-                                    <span class="fas fa-angle-double-left"></span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a href="#" class="page-link">01</a></li>
-                        <li class="page-item"><a href="#" class="page-link active">02</a></li>
-                        <li class="page-item"><a href="#" class="page-link">03</a></li>
-                        <li class="page-item"><a href="#" class="page-link">04</a></li>
-                        <li class="page-item"><a href="#" class="page-link">05</a></li>
-                        <li class="page-item">
-                            <a href="#" class="page-link disabled" aria-label="Next">
-                                <span aria-hidden="true">
-                                    <span class="fas fa-angle-double-right"></span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                </div>
             </div>
             <div class="blog-right-sidebar weight300">
                 <aside class="single-sidebar-widget search-widget">
@@ -225,8 +154,7 @@
         </div>
     </div>
 </section>
-<!--================Blog Area =================-->
-
+<!-- end blog area -->
 
 <!-- footer section -->
 <footer class="footer p-70" id="footer">

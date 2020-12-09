@@ -45,11 +45,11 @@
 	    justify-content: flex-end;
 	    align-items: center;
 
-		li {
+		.nav-item {
 			margin-left: 1rem;
 			list-style-type: none;
 
-			a {
+			.nav-link {
 				padding: .35rem .75rem;
 				font-size: 1rem;
 				font-weight: 400;
@@ -63,6 +63,49 @@
 				&:hover, &:active, &.active {
 					color: $main-color;
 					border-bottom-color: $main-color;
+				}
+			}
+		}
+
+		.submenu {
+			position: relative;
+		}
+
+		.nav-item.submenu {
+			.dropdown-menu {
+				position: absolute;
+				display: block;
+				left: 0;
+				top: 150%;
+				min-width: 200px;
+				padding: 0;
+				text-align: left;
+				background-color: #ffa400;
+				color: $break-white;
+				border: none;
+				border-radius: 0;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .3s ease-in;
+			}
+
+			&:hover {
+				.dropdown-menu {
+					opacity: 1;
+					visibility: visible;
+					top: 100%;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			.nav-link {
+				display: block;
+				width: 100%;
+				transition: color.25s ease-in;
+				&:hover, &:active, &.hover, &.active {
+					color: $sec-color;
+					border-bottom-color: none;
 				}
 			}
 		}
@@ -142,17 +185,7 @@
 	align-items: center;
 }
 
-//.blog-header {
-//	position: initial;
-//	height: 60px;
-//	background-color: transparent;
-//	color: $sec-color;
-//	border-top: 5px solid $main-color;
-//
-//	.logo {
-//		img {
-//			max-width: 120px;
-//		}
-//	}
-//}
+.header.light-header {
+	color: $main-color
+}
 /* ===== end header styling ====== */

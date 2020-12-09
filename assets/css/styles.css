@@ -260,11 +260,11 @@ li, ol, ul, dl {
   justify-content: flex-end;
   align-items: center;
 }
-.header .nav-links li {
+.header .nav-links .nav-item {
   margin-left: 1rem;
   list-style-type: none;
 }
-.header .nav-links li a {
+.header .nav-links .nav-item .nav-link {
   padding: .35rem .75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -275,9 +275,42 @@ li, ol, ul, dl {
   border-bottom: 1px solid transparent;
   transition: all .3s ease;
 }
-.header .nav-links li a:hover, .header .nav-links li a:active, .header .nav-links li a.active {
+.header .nav-links .nav-item .nav-link:hover, .header .nav-links .nav-item .nav-link:active, .header .nav-links .nav-item .nav-link.active {
   color: #ffa400;
   border-bottom-color: #ffa400;
+}
+.header .nav-links .submenu {
+  position: relative;
+}
+.header .nav-links .nav-item.submenu .dropdown-menu {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 150%;
+  min-width: 200px;
+  padding: 0;
+  text-align: left;
+  background-color: #ffa400;
+  color: #eaf6ff;
+  border: none;
+  border-radius: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in;
+}
+.header .nav-links .nav-item.submenu:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+.header .nav-links .dropdown-menu .nav-link {
+  display: block;
+  width: 100%;
+  transition: color 0.25s ease-in;
+}
+.header .nav-links .dropdown-menu .nav-link:hover, .header .nav-links .dropdown-menu .nav-link:active, .header .nav-links .dropdown-menu .nav-link.hover, .header .nav-links .dropdown-menu .nav-link.active {
+  color: #7a7b7d;
+  border-bottom-color: none;
 }
 @media (max-width: 1024px) {
   .header .nav-links {
@@ -342,6 +375,10 @@ li, ol, ul, dl {
   align-items: center;
 }
 
+.header.light-header {
+  color: #ffa400;
+}
+
 /* ===== end header styling ====== */
 /* ========= banner styling ========= */
 .banner {
@@ -354,6 +391,16 @@ li, ol, ul, dl {
   border-top: 0.5rem solid #ffa400;
 }
 
+.banner.single-banner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 75%, rgba(255, 255, 255, 0.4)), url(../imgs/blog/main-blog/mainBlog-2.jpg) center no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.banner.single-banner .b-title {
+  margin-top: -5rem;
+  margin-bottom: 0;
+}
+
 .banner-wrapper {
   width: 70%;
   margin-top: -2.5rem;
@@ -362,6 +409,15 @@ li, ol, ul, dl {
   padding-bottom: 1.5rem;
   text-shadow: 1px 1px 5px rgba(255, 164, 0, 0.76);
   /* ======== end banner styling ======= */
+}
+.banner-wrapper .page-link a {
+  padding: .5rem 0;
+  margin-left: 1rem;
+  color: #eaf6ff;
+  transition: .25s ease-in;
+}
+.banner-wrapper .page-link a:hover {
+  color: #ffa400;
 }
 .banner-wrapper p {
   color: #fff;

@@ -228,6 +228,16 @@ li, ol, ul, dl {
   text-align: right !important;
 }
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .input-group {
   position: relative;
   width: 100%;
@@ -683,8 +693,10 @@ li, ol, ul, dl {
   color: #7a7b7d;
 }
 .blog-area .navigation-area {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
 }
 .blog-area .navigation-area .nav-left, .blog-area .navigation-area .nav-right {
@@ -699,6 +711,9 @@ li, ol, ul, dl {
 }
 .blog-area .navigation-area .nav-left .thumb img, .blog-area .navigation-area .nav-right .thumb img {
   transition: all .3s ease-in;
+}
+.blog-area .navigation-area .nav-left:hover, .blog-area .navigation-area .nav-right:hover {
+  cursor: pointer;
 }
 .blog-area .navigation-area .nav-left:hover .thumb img, .blog-area .navigation-area .nav-right:hover .thumb img {
   opacity: .5;
@@ -757,6 +772,7 @@ li, ol, ul, dl {
 }
 .blog-area .comment-area .single-comment {
   align-items: center;
+  border-bottom: 1px solid #eee;
 }
 .blog-area .comment-area .comment-options .row {
   justify-content: space-between;
@@ -779,6 +795,42 @@ li, ol, ul, dl {
 }
 .blog-area .comment-area .comment-options p {
   margin-bottom: 0;
+}
+.blog-area .comment-form {
+  background-color: rgba(243, 252, 255, 0.54);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+.blog-area .comment-form h4 {
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+.blog-area .comment-form .form-inline .form-group {
+  width: 50%;
+  padding-right: 1rem;
+}
+.blog-area .comment-form .form-control {
+  width: 100%;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #495454;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: box-shadow .25s ease;
+}
+.blog-area .comment-form .form-control:hover {
+  border-color: rgba(255, 164, 0, 0.25);
+}
+.blog-area .comment-form .form-control:focus {
+  border-color: rgba(255, 164, 0, 0.25);
+  box-shadow: 1px 1px 3px rgba(255, 164, 0, 0.6);
+}
+.blog-area .comment-form textarea.form-control {
+  height: auto;
+  resize: none;
 }
 
 .blog-intro {

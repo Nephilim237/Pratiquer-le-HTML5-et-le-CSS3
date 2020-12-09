@@ -226,6 +226,16 @@ li, ol, ul, dl {
     text-align: right!important;
 }
 
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.form-inline {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
 .input-group {
     position: relative;
     width: 100%;

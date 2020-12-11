@@ -23,10 +23,77 @@ body {
 	text-align: left;
 }
 
+
+/*===== Title zone =====*/
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 }
+
+h1, .h1 {
+    font-size: 2.5em;
+}
+
+h2, .h2 {
+    font-size: 2.3em;
+}
+
+h3, .h3 {
+    font-size: 2em;
+}
+
+h4, .h4 {
+    font-size: 1.6em;
+}
+
+h5, .h5 {
+    font-size: 1.4em;
+}
+
+h6, .h6 {
+    font-size: 1.2em;
+}
+
+.main-title {
+    font-family: $ubuntu, sans-serif;
+    line-height: 1;
+    color: $main-color;
+}
+
+.b-title {
+    font-family: $piazzo, Serif;
+    line-height: 2;
+    color: $blue-color;
+}
+
+.main-title, .b-title {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+    @media (max-width: $medium) {
+        & {
+            font-size: 2em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+.l4-title {
+    font-family: $piazzo;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $main-color;
+}
+.post-title {
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $sec-color;
+}
+/*===== End title zone =====*/
 
 p {
 	margin-top: 0;
@@ -53,6 +120,7 @@ li, ol, ul, dl {
 	vertical-align: middle;
 }
 
+/*===== Margin and padding zone =====*/
 .py-70 {
 	padding: 70px 0;
 }
@@ -99,49 +167,7 @@ li, ol, ul, dl {
 	margin-right: 1rem;
 }
 
-.b-title {
-	font-family: $piazzo;
-	font-size: 3.5em;
-	font-weight: 500;
-	line-height: 2;
-	color: $blue-color;
-	margin-bottom: 2.5rem;
-
-	@media (max-width: $medium) {
-		& {
-			font-size: 2.5rem;
-		    line-height: 1.2;
-		    margin-bottom: 1rem;
-		}
-	}
-}
-
-.main-title {
-	font-family: $ubuntu, serif;
-	font-size: 3em;
-	font-weight: 400;
-	line-height: 1;
-	color: $main-color;
-	margin-bottom: 2rem;
-
-	@media (max-width: $medium) {
-		font-size: 2.5rem;
-		margin-bottom: 1rem;
-	}
-}
-
-.l4-title {
-	font-family: $piazzo;
-	font-weight: 600;
-	font-size: 1.2rem;
-	color: $main-color;
-}
-.post-title {
-	font-family: $ubuntu;
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: $sec-color;
-}
+/*===== End margin and padding zone =====*/
 
 .container {
 	width: 100%;
@@ -149,22 +175,20 @@ li, ol, ul, dl {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	@media (min-width: 760px){
-		& {
-			max-width: 720px;
-		}
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+	@media (min-width: $small){
+        max-width: 720px;
 	}
 
     @media (min-width: $medium) {
-        & {
-            max-width: 960px;
-        }
+        max-width: 960px;
     }
 
     @media (min-width: 1200px) {
-        & {
-            max-width: 1140px;
-        }
+        max-width: 1140px;
     }
 }
 
@@ -177,6 +201,8 @@ li, ol, ul, dl {
 		& {
 			max-width: 90%;
 			margin-bottom: 2rem;
+            margin-left: auto;
+            margin-right: auto;
 		}
 	}
 }
@@ -194,6 +220,7 @@ li, ol, ul, dl {
 
 .img {
     width: 100%;
+    vertical-align: middle;
 }
 
 .img-rounded {

@@ -7,11 +7,15 @@
     //border-top: 1px solid transparentize($main-color, .65);
 
     .footer-blocks {
-        justify-content: space-between;
 
         .footer-block {
-            width: 45%;
-            margin-left: 1rem;
+            width: 50%;
+            flex: 0 0 50%;
+
+            @media (max-width: $small - 0.1) {
+                width: 100%;
+                flex: 0 0 100%;
+            }
         }
 
         .f-links {
@@ -33,26 +37,20 @@
         }
 
         .s-links {
-            display: flex;
 
             ul {
                 display: flex;
-                justify-content: flex-end;
                 align-items: center;
                 width: 100%;
             }
 
-            li {
-                margin-left: 1rem;
+            a {
+                padding: 1rem;
+                color: $sec-color;
+                transition: all .3s ease;
 
-                a {
-                    padding: 1rem;
-                    color: $sec-color;
-                    transition: all .3s ease;
-
-                    &:hover, &:active {
-                        color: $main-color;
-                    }
+                &:hover, &:active {
+                    color: $main-color;
                 }
             }
         }

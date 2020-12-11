@@ -48,6 +48,9 @@
 		.nav-item {
 			margin-left: 1rem;
 			list-style-type: none;
+            @media(max-width: $medium) {
+                margin-bottom: 1rem;
+            }
 
 			.nav-link {
 				padding: .35rem .75rem;
@@ -59,10 +62,17 @@
 				text-decoration: none;
 				border-bottom: 1px solid transparent;
 				transition: all .3s ease;
-
+                @media(max-width: $medium) {
+                    padding: .5rem 1rem;
+                    color: $sec-color;
+                }
 				&:hover, &:active, &.active {
 					color: $main-color;
 					border-bottom-color: $main-color;
+                    @media(max-width: $medium) {
+                        color: $break-white;
+                        border-bottom-color: $break-white;
+                    }
 				}
 			}
 		}
@@ -89,13 +99,16 @@
 				transition: all .3s ease-in;
 			}
 
-			&:hover {
-				.dropdown-menu {
-					opacity: 1;
-					visibility: visible;
-					top: 100%;
-				}
-			}
+            @media (min-width: $medium) {
+                &:hover {
+                    .dropdown-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+
+            }
 		}
 
 		.dropdown-menu {
@@ -110,7 +123,7 @@
 			}
 		}
 
-		@media (max-width: $medium) {
+		@media (max-width: $medium) { //Responsive nav-links
 			& {
 				display: block;
 				max-width: 75%;
@@ -123,20 +136,6 @@
 				padding-bottom: 3rem;
 				background-color: $main-color;
 				color: white;
-
-				li {
-					margin-bottom: 1rem;
-
-					a {
-						padding: .5rem 1rem;
-						color: $sec-color;
-
-						&:hover, &:active, &.active {
-							color: $break-white;
-							border-bottom-color: $break-white;
-						}
-					}
-				}
 			}
 		}
 	}

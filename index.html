@@ -16,25 +16,25 @@
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header-container">
-				<a href="#" class="logo"><img src="assets/imgs/MCC.png" alt="Logo"></a>
-				<nav class="navigation">
-					<ul class="nav-links" id="nav-links">
+				<a href="#" class="logo"><img class="img" src="assets/imgs/MCC.png" alt="Logo"></a><!-- Logo -->
+				<nav class="navigation"><!-- Navigation begin -->
+					<ul class="nav-links" id="nav-links"><!-- Navlinks container (ul) -->
 						<li class="nav-item"><a href="index.html" class="nav-link active">Accueil <i class="fas fa-home"></i></a></li>
-                        <li class="nav-item submenu">
+                        <li class="nav-item submenu"><!-- submenu link -->
                             <a href="#" class="nav-link">Blog <i class="fas fa-comments"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu"><!-- Dropdown container (ul) -->
                                 <li class="nav-item">
                                     <a href="blog.html" class="nav-link">Blog <i class="fas fa-comment"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="single.html" class="nav-link">Single Blog <i class="far fa-newspaper"></i></a>
                                 </li>
-                            </ul>
+                            </ul><!-- End dropdown container -->
                         </li>
 						<li class="nav-item"><a href="contact.html" class="nav-link">Contact <i class="fas fa-envelope"></i></a></li>
-					</ul>
+					</ul><!-- End Navlinks container -->
 				</nav>
-				<a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a>
+				<a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a><!-- hamburger menu icon -->
 			</div>
 		</div>
 	</header>
@@ -57,17 +57,17 @@
 		<div class="container">
 			<div class="card-wrapper">
 				<article>
-					<header><h3>De la pratique et rien que de la pratique</h3></header>
+					<header><h4>De la pratique et rien que de la pratique</h4></header>
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus dolor aspernatur perferendis alias laboriosam delectus enim sapiente fugit laborum id, eligendi doloribus dolore illo iste provident maxime, asperiores cumque quos...</p>
 					<footer><a href="#" class="btn btn-mini btn-outline">Voir Plus <i class="fas fa-angle-double-right"></i></a></footer>
 				</article>
 				<article>
-					<header><h3>Encore et toujours de la pratique</h3></header>
+					<header><h4>Encore et toujours de la pratique</h4></header>
 					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolorum magni quaerat, expedita fugit et est molestias vitae velit, itaque ipsa ex obcaecati hic deleniti earum rem sapiente voluptas minus...</p>
 					<footer><a href="#" class="btn btn-mini btn-outline">Voir Plus <i class="fas fa-angle-double-right"></i></a></footer>
 				</article>
 				<article>
-					<header><h3>Pour enfin devenir des professionnels</h3></header>
+					<header><h4>Pour enfin devenir des professionnels</h4></header>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magni tempore esse reprehenderit soluta voluptate minus libero, adipisci maiores nisi blanditiis repellat maxime officiis quos? Repudiandae sunt...</p>
 					<footer><a href="#" class="btn btn-mini btn-outline">Voir Plus <i class="fas fa-angle-double-right"></i></a></footer>
 				</article>
@@ -78,36 +78,44 @@
 
 	<!-- section two -->
 	<section class="mentors py-70" id="mentors">
-		<div class="container">
+		<div class="container"> <!-- Mentors container -->
 			<div class="mentors-wrapper">
-				<header class="section-header">
+				<header class="section-header"><!-- Mentors description (h1 + Desc) -->
 					<h1 class="main-title">Personnels a votre disposition</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic at omnis, placeat vitae doloremque sunt ipsa facere obcaecati voluptates doloribus tempore incidunt dolore tenetur ducimus, maxime unde recusandae nostrum.</p>
-				</header>
-				<div class="mentors-container flex">
-					<div class="box mentor-box">
-						<div class="mentor-img"><img src="assets/imgs/mentors/m5.jpg" alt="mentors"></div>
-						<h4 class="l4-title">Zagor</h4>
-						<p>Developpeur front-end</p>
-					</div>
-					<div class="box mentor-box">
-						<div class="mentor-img"><img src="assets/imgs/mentors/m4.jpg" alt="mentors"></div>
-						<h4 class="l4-title">Igor</h4>
-						<p>Concepteur graphique</p>
-					</div>
-					<div class="box mentor-box">
-						<div class="mentor-img"><img src="assets/imgs/mentors/m2.jpg" alt="mentors"></div>
-						<h4 class="l4-title">Yoda</h4>
-						<p>Developpeur back-end</p>
-					</div>
-					<div class="box mentor-box">
-						<div class="mentor-img"><img src="assets/imgs/mentors/m1.jpg" alt="mentors"></div>
-						<h4 class="l4-title">Soda</h4>
-						<p>Directeur des projets</p>
-					</div>
-				</div>
+				</header> <!-- End mentors desc -->
+				<div class="mentors-container row"><!-- Mentors card begin -->
+					<div class="mentor-box px-15"><!-- Card 1 -->
+                        <div class="box">
+                            <div class="mentor-img"><img class="img img-rounded" src="assets/imgs/mentors/m5.jpg" alt="mentors"></div>
+                            <h4 class="l4-title">Zagor</h4>
+                            <p>Developpeur front-end</p>
+                        </div>
+					</div><!-- End card 1 -->
+					<div class="mentor-box px-15"><!-- Card 2 -->
+                        <div class="box">
+                            <div class="mentor-img"><img class="img img-rounded" src="assets/imgs/mentors/m4.jpg" alt="mentors"></div>
+                            <h4 class="l4-title">Zagor</h4>
+                            <p>Developpeur front-end</p>
+                        </div>
+					</div><!-- End card 2 -->
+					<div class="mentor-box px-15"><!-- Card 3 -->
+                        <div class="box">
+                            <div class="mentor-img"><img class="img img-rounded" src="assets/imgs/mentors/m2.jpg" alt="mentors"></div>
+                            <h4 class="l4-title">Zagor</h4>
+                            <p>Developpeur front-end</p>
+                        </div>
+					</div><!-- End card 3 -->
+					<div class="mentor-box px-15"><!-- Card 4 -->
+                        <div class="box">
+                            <div class="mentor-img"><img class="img img-rounded" src="assets/imgs/mentors/m1.jpg" alt="mentors"></div>
+                            <h4 class="l4-title">Zagor</h4>
+                            <p>Developpeur front-end</p>
+                        </div>
+					</div><!-- End card 4 -->
+				</div><!-- End mentors card -->
 			</div>
-		</div>
+		</div><!-- End mentors container -->
 	</section>
 	<!-- end section two -->
 
@@ -115,26 +123,26 @@
 	<section class="articles py-70" id="articles">
 		<div class="container">
 			<div class="articles-wrapper">
-				<header class="section-header">
+				<header class="section-header"><!-- Article header (h1+Desc) -->
 					<h1 class="main-title">Soyez toujours a jour, voici les avancees les plus recentes</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Corporis omnis expedita.</p>
-				</header>
-				<div class="articles-container flex">
-					<article>
-						<div class="img article-img"><img src="assets/imgs/articles/post-1.jpg" alt="post image"></div>
+				</header><!-- End article desc -->
+				<div class="articles-container row"><!-- Articles container -->
+					<article class="px-15"><!-- First article -->
+						<div class="article-img"><img class="img" src="assets/imgs/articles/post-1.jpg" alt="post image"></div>
 						<header>
-							<h3>Presentation de la plate forme Coding City</h3>
+							<h4>Presentation de la plate forme Coding City</h4>
 						</header>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
 						<footer>
 							<a href="#" class="btn btn-big">Lire l'article</a>
 						</footer>
-					</article>
-					<article>
-						<div class="img article-img"><img src="assets/imgs/articles/post-4.jpg" alt="post image"></div>
+					</article><!-- End first article -->
+					<article class="px-15"><!-- Second article -->
+						<div class="article-img"><img class="img" src="assets/imgs/articles/post-4.jpg" alt="post image"></div>
 						<header>
-							<h3>L'avancee inquietante de l'intelligence artificielle</h3>
+							<h4>L'avancee inquietante de l'intelligence artificielle</h4>
 						</header>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -142,8 +150,8 @@
 						<footer>
 							<a href="#" class="btn btn-big">Lire l'article</a>
 						</footer>
-					</article>
-				</div>
+					</article><!-- End second article -->
+				</div><!-- End articles container -->
 			</div>
 		</div>
 	</section>
@@ -153,22 +161,22 @@
 	<footer class="footer py-70" id="footer">
 		<div class="container">
 			<div class="footer-wrapper">
-				<div class="footer-blocks flex">
-					<div class="footer-block f-links">
+				<div class="footer-blocks row"><!-- rows block container -->
+					<div class="footer-block f-links px-15"><!-- Site links container -->
 						<ul>
 							<li><a href="#">A propos de nous</a></li>
 							<li><a href="#">Nous écrire</a></li>
 							<li><a href="#">Politique de confidentialité</a></li>
 						</ul>
-					</div>
-					<div class="footer-block s-links">
+					</div><!-- End site links container -->
+					<div class="footer-block s-links px-15"><!-- Social links container -->
 						<ul>
 							<li><a href="#"><i class="fab fa-facebook"></i> </a></li>
 							<li><a href="#"><i class="fab fa-twitter"></i> </a></li>
 							<li><a href="#"><i class="fab fa-youtube"></i> </a></li>
 							<li><a href="#"><i class="fab fa-instagram"></i> </a></li>
 						</ul>
-					</div>
+					</div><!-- End social links container -->
 				</div>
 				<div class="copyright" id="copyright">
 					&copy; | Coding City 2020 all rights reserved
@@ -177,6 +185,6 @@
 		</div>
 	</footer>
 	<!-- end footer section -->
-	<script type="text/javascript" src="assets/script.js"></script>
+	<script type="text/javascript" src="assets/script.js"></script><!--JavaScript link -->
 </body>
 </html>

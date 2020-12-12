@@ -1,0 +1,234 @@
+h4 {
+    font-size: 1rem;
+}
+.post-elts {
+    width: 67%;
+    flex: 0 0 67%;
+    font-size: 15px;
+
+    @media (max-width: $medium) {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.post-img {
+    width: 75%;
+    flex: 0 0 75%;
+    @media (max-width: $small) {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+.notice {
+    @media(max-width: $small) {
+        display: none;
+    }
+
+    .quote {
+        background-color: $break-white;
+        margin: 2rem 0;
+        padding: 2rem 3rem;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 500;
+        box-shadow: 5px 15px 15px rgba(0, 0, 0, .23);
+    }
+}
+
+.notice-img {
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.notice-text {
+    margin-top: 25px;
+}
+
+.navigation-area {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    @media (max-width: $small) {
+        .thumb, .arrow {
+            display: none;
+        }
+    }
+
+    .nav-left, .nav-right {
+        display: flex;
+        flex: 0 0 50%;
+        width: 50%;
+        align-items: center;
+
+        .thumb {
+            width: 60px;
+            background-color: $black;
+
+            img {
+                transition: all .3s ease-in;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            .thumb img {
+                opacity: .5;
+            }
+
+            .details {
+                a {
+                    color: $main-color;
+                }
+            }
+
+            .arrow {
+                i {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .nav-right {
+        flex-flow: row-reverse;
+        text-align: right;
+    }
+}
+
+.arrow {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+
+    i {
+        color: $main-color;
+        opacity: 0;
+        transition: .3s ease-in;
+    }
+}
+
+.details {
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $font-color;
+        transition: .3s ease-in;
+    }
+}
+
+.comment-area {
+    border: 1px solid #eee;
+    padding: 50px 30px;
+    margin-top: 50px;
+
+    h4 {
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .thumb {
+        width: 15%;
+        flex: 0 0 15%;
+    }
+
+    .desc {
+        width: 85%;
+        flex: 0 0 85%;
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        h5 a {
+            color: $font-color;
+            font-size: 16px;
+        }
+    }
+
+    .single-comment {
+        align-items: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .comment-options {
+        .row {
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        small:first-child {
+            font-style: italic;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        small:last-child {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #eee;
+            transition: .25s ease-in;
+
+            &:hover {
+                background-color: $main-color;
+                color: $break-white;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.comment-form {
+    background-color: rgba(243, 252, 255, 0.54);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 45px 30px;
+    text-align: center;
+    border: 1px solid #eee;
+
+    h4 {
+        margin-bottom: 50px;
+        font-size: 1.2rem   ;
+    }
+
+    .form-inline {
+        .form-group {
+            width: 50%;
+            padding-right: 1rem;
+        }
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px 20px;
+        font-size: 14px;
+        color: $font-color;
+        background-color: #fff;
+        border: 1px solid transparent;
+        transition: box-shadow .25s ease;
+
+        &:hover {
+            border-color: transparentize($main-color, .75);
+        }
+
+        &:focus {
+            border-color: transparentize($main-color, .75);
+            box-shadow: 1px 1px 3px transparentize($main-color, .40);
+        }
+    }
+
+    textarea.form-control {
+        height: auto;
+        resize: none;
+    }
+}

@@ -1,0 +1,7 @@
+.contact-info {
+    align-items: center;
+    min-height: 500px;
+    @import "contact/contact_info";
+
+    @import "contact/contact_form";
+}
